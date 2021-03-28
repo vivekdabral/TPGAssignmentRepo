@@ -33,6 +33,13 @@ This repository has 3 folders:
 - Taurus
 
 ### How to Run
+- Install Taurus on host machine (Ubuntu):
+
+	sudo apt-get update
+	udo apt-get install python3 default-jre-headless python3-tk python3-pip python3-dev \
+  	libxml2-dev libxslt-dev zlib1g-dev net-tools
+	sudo python3 -m pip install bzt
+	
 - Create a pipeline job and select Pipeline script from SCM option under Pipeline.
 - Provide URL and master branch.
 - Under Script Path, select performance/Jenkinsfile-performance-test

@@ -7,9 +7,9 @@ This repository has 3 folders:
 - **PerformanceTest:** Contains the jmeter script and jenkinsfile to run the performance tests on Jenkins.
 
 ## Setup jenkins and Run microservice:
-1- Install the jenkins server on local machine(i.e. localhost:8080). Setup M3 as global variable for java and install Performance and HTMLPublisher plugins.
-2- Run the word-count-api microservice: mvn spring-boot:run. Also, I have added a docker file in the word-count-api project which can be used to run the microservice through docker.
-3- This will run the microservice on  localhost:8081
+- Install the jenkins server on local machine(i.e. localhost:8080). Setup M3 as global variable for maven and install Performance and HTMLPublisher plugins.
+- Run the word-count-api microservice: mvn spring-boot:run. Also, I have added a docker file in the word-count-api project which can be used to run the microservice through docker.
+- This will run the microservice on  localhost:8081
 
 
 ## Run RestAssuredTest

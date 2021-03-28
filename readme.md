@@ -7,9 +7,10 @@ This repository has 3 folders:
 - **PerformanceTest:** Contains the jmeter script and jenkinsfile to run the performance tests on Jenkins.
 
 ## Setup jenkins and Run microservice:
-1- Install the jenkins server on local machine(i.e. localhost:8080)
-2- Run the word-count-api microservice: mvn spring-boot:run
+1- Install the jenkins server on local machine(i.e. localhost:8080). Setup M3 as global variable for java and install Performance and HTMLPublisher plugins.
+2- Run the word-count-api microservice: mvn spring-boot:run. Also, I have added a docker file in the word-count-api project which can be used to run the microservice through docker.
 3- This will run the microservice on  localhost:8081
+
 
 ## Run RestAssuredTest
 ### Tools Used: 
@@ -39,10 +40,12 @@ This repository has 3 folders:
 	udo apt-get install python3 default-jre-headless python3-tk python3-pip python3-dev \
   	libxml2-dev libxslt-dev zlib1g-dev net-tools
 	sudo python3 -m pip install bzt
-	
+
 - Create a pipeline job and select Pipeline script from SCM option under Pipeline.
 - Provide URL and master branch.
 - Under Script Path, select performance/Jenkinsfile-performance-test
 - Click on Build.
 - After running the job, performace trend graph is generated.
+
+
 

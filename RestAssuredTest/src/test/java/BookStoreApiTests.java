@@ -47,6 +47,14 @@ public class BookStoreApiTests {
         bookStoreApiSteps.isStatusCodeCorrect(response.getStatusCode(), 400);
 
     }
+
+    @Test
+    public void loginWithValidCredentialsAndVerifyResponseCorrectnessWithStatusCodeWhenCountParamIsZero()
+    {
+        Response response= bookStoreApiSteps.loginWithValidCredentialsAndCallApiWithCount("admin", "password", "0");
+        bookStoreApiSteps.isStatusCodeCorrect(response.getStatusCode(), 200);
+        bookStoreApiSteps.isCorrectObjectsReturned(response.getBody().asString(),0);
+    }
     public int getRandomNumberUsingNextInt(int min, int max) {
         Random random = new Random();
         return random.nextInt(max - min) + min;

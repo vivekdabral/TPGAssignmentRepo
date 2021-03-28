@@ -21,7 +21,7 @@ This repository has 3 folders:
 
 ### How to Run
 - Create a pipeline job and select Pipeline script from SCM option under Pipeline.
-- Provide URL and VivekAssignment branch.
+- Provide URL and master branch.
 - Under Script Path, select RestAssuredTest/Jenkinsfile-rest-assured-test
 - Click on Build.
 - Serenity Report is generated which can be viewed after clicking serenity link on the left side.
@@ -34,7 +34,7 @@ This repository has 3 folders:
 
 ### How to Run
 - Create a pipeline job and select Pipeline script from SCM option under Pipeline.
-- Provide URL and VivekAssignment branch.
+- Provide URL and master branch.
 - Under Script Path, select performance/Jenkinsfile-performance-test
 - Click on Build.
 - After running the job, performace trend graph is generated.
